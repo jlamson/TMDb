@@ -13,7 +13,7 @@ class AppCoordinator: NSObject, Coordinator {
     let window: UIWindow
     let navGraph: NavGraph
     
-    private var childCoordinators = Dictionary<Destination, Coordinator>()
+    private var childCoordinators = [Destination : Coordinator]()
     
     init(window: UIWindow) {
         self.window = window

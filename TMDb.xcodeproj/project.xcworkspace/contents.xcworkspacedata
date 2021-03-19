@@ -4,6 +4,10 @@
    <FileRef
       location = "group:/Users/joshua.lamson/iOS/TMDb/TMDb/LaunchScreen.storyboard">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "stubborn group">
+   </Group>
    <FileRef
       location = "self:">
    </FileRef>

@@ -14,6 +14,7 @@ class MovieSearchCoordinator: Coordinator {
     
     init(_ navGraph: INavGraph) {
         movieSearchViewController = MovieSearchViewController()
+        movieSearchViewController.viewModel = MovieSearchViewModel()
     }
     
     func start(with args: Dictionary<String, Any>? = nil) {

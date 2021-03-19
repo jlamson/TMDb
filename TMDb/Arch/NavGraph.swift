@@ -37,21 +37,11 @@ class NavGraph : INavGraph {
     func push(to destination: Destination) {
         let destinationViewController = destinationFactory!.getView(for: destination)
         
-        rootController.title = name(for: destination)
         rootController.pushViewController(destinationViewController, animated: true)
     }
 
     func pop() {
         rootController.popViewController(animated: true)
-    }
-    
-    // MARK: - Names
-    
-    func name(for destination: Destination) -> String {
-        switch(destination) {
-        case .search:
-            return "Search"
-        }
     }
 }
 

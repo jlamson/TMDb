@@ -9,6 +9,10 @@ import UIKit
 
 class MovieSearchViewController: UIViewController {
 
+    var viewModel: MovieSearchViewModel?
+    
+    var movieData: [Movie] = []
+    
     lazy var searchBar: UISearchBar = {
         let it = UISearchBar()
         it.translatesAutoresizingMaskIntoConstraints = false
@@ -28,22 +32,27 @@ class MovieSearchViewController: UIViewController {
         return it
     }()
     
-    let movieData: [Movie] = {
-        var movies: [Movie] = []
-        for i in 1...10 {
-            movies.append(
-                Movie(name: "name" + "\(i)",
-                      desc: "\(i)" + ": Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim enim sit amet venenatis urna. Sit amet luctus venenatis lectus magna fringilla urna porttitor.")
-            )
-        }
-        return movies
+    lazy var progress: UIActivityIndicatorView = {
+        let it = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 48, height: 48))
+        it.style = UIActivityIndicatorView.Style.large
+        it.color = UIColor.purple
+        it.hidesWhenStopped = true
+        
+        return it
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutChildren()
+        title = "Search"
         
-        tableView.reloadData()
+        guard let viewModel = viewModel else {
+            fatalError("viewModel (MovieSearchViewModel) not set")
+        }
+        
+        viewModel.observeForLifetime(of: self) { [weak self] vc, viewState in
+            self?.render(viewState)
+        }
     }
     
     private func layoutChildren() {
@@ -63,6 +72,25 @@ class MovieSearchViewController: UIViewController {
             tableView.topAnchor.constraint(equalTo: searchBar.bottomAnchor),
             tableView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor)
         ])
+        
+        view.addSubview(progress)
+        progress.center = view.center
+        progress.bringSubviewToFront(view)
+        progress.stopAnimating()
+    }
+    
+    private func render(_ viewState: MovieSearchViewState) {
+        switch(viewState) {
+        case .Loading:
+            progress.startAnimating()
+        case .Success(movies: let movies):
+            progress.stopAnimating()
+            movieData = movies
+            tableView.reloadData()
+        case .Failure(error: let error):
+            UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                .show(self, sender: nil)
+        }
     }
 }
 
