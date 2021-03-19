@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/joshua.lamson/iOS/TMDb/TMDb/LaunchScreen.storyboard">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
