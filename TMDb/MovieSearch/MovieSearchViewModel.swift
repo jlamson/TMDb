@@ -9,16 +9,11 @@ import Foundation
 
 class MovieSearchViewModel : ObservableViewModel<MovieSearchViewController, MovieSearchViewState> {
     
-    let movieData: [Movie] = {
-        var movies: [Movie] = []
-        for i in 1...10 {
-            movies.append(
-                Movie(name: "name" + "\(i)",
-                      desc: "\(i)" + ": Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim enim sit amet venenatis urna. Sit amet luctus venenatis lectus magna fringilla urna porttitor.")
-            )
-        }
-        return movies
-    }()
+    private let repository: MovieSearchRepository
+    
+    init(repository: MovieSearchRepository) {
+        self.repository = repository
+    }
     
     @discardableResult
     override func observeForLifetime(
@@ -27,18 +22,36 @@ class MovieSearchViewModel : ObservableViewModel<MovieSearchViewController, Movi
     ) -> ObservationToken {
         let token = super.observeForLifetime(of: observer, closure)
         
-        publish(.Loading)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.publish(.Success(movies: self.movieData))
-        }
+        publish(.Success(movies: []))
         
         return token
     }
     
+    func search(query: String) {
+        publish(.Loading)
+        repository.search(query) { [weak self] result in
+            switch (result) {
+            case .success(let dictionary):
+                let results = dictionary["results"] as? [[String : Any]]
+                var movies = [Movie]()
+                results?.forEach { movie in
+                    let name = movie["title"] as? String
+                    let description = movie["overview"] as? String
+                    if let safeName = name, let safeDescription = description {
+                        movies.append(Movie(name: safeName, desc: safeDescription))
+                    }
+                }
+                
+                self?.publish(.Success(movies: movies))
+            case .error(let error):
+                self?.publish(.Failure(error ?? SimpleError("Search Failed for unknown reason")))
+            }
+        }
+    }
 }
 
 enum MovieSearchViewState {
     case Loading
     case Success(movies: [Movie])
-    case Failure(error: Error)
+    case Failure(_ error: Error)
 }

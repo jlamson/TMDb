@@ -98,14 +98,9 @@ class MovieSearchViewController: UIViewController {
 
 extension MovieSearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        let alert = UIAlertController()
-        alert.message = searchBar.text
-        alert.addAction(
-            UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
-                
-            })
-        )
-        self.present(alert, animated: true, completion: { })
+        if let safeQuery = searchBar.text {
+            viewModel?.search(query: safeQuery)
+        }
     }
 }
 
