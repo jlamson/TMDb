@@ -31,18 +31,8 @@ class MovieSearchViewModel : ObservableViewModel<MovieSearchViewController, Movi
         publish(.Loading)
         repository.search(query) { [weak self] result in
             switch (result) {
-            case .success(let dictionary):
-                let results = dictionary["results"] as? [[String : Any]]
-                var movies = [Movie]()
-                results?.forEach { movie in
-                    let name = movie["title"] as? String
-                    let description = movie["overview"] as? String
-                    if let safeName = name, let safeDescription = description {
-                        movies.append(Movie(name: safeName, desc: safeDescription))
-                    }
-                }
-                
-                self?.publish(.Success(movies: movies))
+            case .success(let response):
+                self?.publish(.Success(movies: response.results ?? []))
             case .error(let error):
                 self?.publish(.Failure(error ?? SimpleError("Search Failed for unknown reason")))
             }

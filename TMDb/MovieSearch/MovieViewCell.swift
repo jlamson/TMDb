@@ -63,7 +63,7 @@ class MovieViewCell: UITableViewCell {
     // MARK: - Binding
     
     func bind(movie: Movie) {
-        title.text = movie.name
-        descriptionText.text = movie.desc
+        title.text = movie.title
+        descriptionText.text = movie.overview
     }
 }

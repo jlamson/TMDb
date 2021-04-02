@@ -88,8 +88,15 @@ class MovieSearchViewController: UIViewController {
             movieData = movies
             tableView.reloadData()
         case .Failure(error: let error):
-            UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
-                .show(self, sender: nil)
+            let alert = UIAlertController(
+                title: "Error",
+                message: error.localizedDescription,
+                preferredStyle: UIAlertController.Style.alert
+            )
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            
+            present(alert, animated: true)
         }
     }
 }

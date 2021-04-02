@@ -20,7 +20,7 @@ class MovieSearchRepository {
                     "&query=\(safeSearch!)")
     }
     
-    func search(_ query: String, _ completion: @escaping (Result<[String : Any]>) -> Void) {
+    func search(_ query: String, _ completion: @escaping (Result<SearchMovieResponse>) -> Void) {
         guard let url = buildUrl(query) else {
             completion(.error(SimpleError("Failed to build query URL")))
             return
@@ -32,22 +32,20 @@ class MovieSearchRepository {
                 return
             }
 
-            guard data != nil else {
+            guard let safeData = data
+            else {
                 completion(.error(SimpleError("No Data or Error returned *shrug*")))
                 return
             }
             
-            guard let json = try? JSONSerialization.jsonObject(with: data!, options: []) else {
-                completion(.error(SimpleError("Couldn't parse response as JSON *shrug*")))
-                return
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            do {
+                let parsedResponse = try decoder.decode(SearchMovieResponse.self, from: safeData)
+                completion(.success(parsedResponse))
+            } catch {
+                completion(.error(error))
             }
-            
-            guard let dictionary = json as? [String : Any] else {
-                completion(.error(SimpleError("Couldn't parse response as [String : Any] *shrug*")))
-                return
-            }
-            
-            completion(.success(dictionary))
         }
         
         task.resume()
