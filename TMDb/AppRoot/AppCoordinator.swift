@@ -14,6 +14,11 @@ class AppCoordinator: NSObject, Coordinator {
     let navGraph: NavGraph
     
     private var childCoordinators = [Destination : Coordinator]()
+    private let remoteImageResolver: RemoteImageResolver = {
+        let cache = NSCache<AnyObject, AnyObject>()
+        // Customize Cache?
+        return CachedRemoteImageResolver(cache: cache)
+    }()
     
     init(window: UIWindow) {
         self.window = window
@@ -40,7 +45,7 @@ extension AppCoordinator : DestinationFactory {
         case .search:
             var searchCoordinator = childCoordinators[.search]
             if (searchCoordinator == nil) {
-                searchCoordinator = MovieSearchCoordinator(navGraph)
+                searchCoordinator = MovieSearchCoordinator(navGraph, remoteImageResolver)
                 childCoordinators[.search] = searchCoordinator
             }
             return searchCoordinator!.viewController()

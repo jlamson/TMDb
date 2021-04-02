@@ -23,3 +23,17 @@ struct Movie: Decodable {
     var video: Bool
     var voteAverage: Double
 }
+
+extension Movie: Equatable {
+    // No custom implementation here, default checks field by field
+}
+
+extension Movie {
+    var posterImageUrl: URL? {
+        if let safePosterPath = posterPath {
+            return URL(string: "https://image.tmdb.org/t/p/original/\(safePosterPath)")
+        } else {
+            return nil
+        }
+    }
+}

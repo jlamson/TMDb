@@ -10,6 +10,7 @@ import UIKit
 class MovieSearchViewController: UIViewController {
 
     var viewModel: MovieSearchViewModel?
+    var remoteImageResolver: RemoteImageResolver?
     
     var movieData: [Movie] = []
     
@@ -122,7 +123,7 @@ extension MovieSearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let convertView = tableView.dequeueReusableCell(withIdentifier: MovieViewCell.identifier, for: indexPath) as! MovieViewCell
         
-        convertView.bind(movie: movieData[indexPath.row])
+        convertView.bind(movie: movieData[indexPath.row], usingImageResolver: remoteImageResolver!)
         
         return convertView
     }

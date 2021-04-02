@@ -11,9 +11,11 @@ import UIKit
 class MovieSearchCoordinator: Coordinator {
     
     var movieSearchViewController: MovieSearchViewController
-    
-    init(_ navGraph: INavGraph) {
+
+    init(_ navGraph: INavGraph, _ remoteImageResolver: RemoteImageResolver) {
         movieSearchViewController = MovieSearchViewController()
+        movieSearchViewController.remoteImageResolver = remoteImageResolver
+
         movieSearchViewController.viewModel = MovieSearchViewModel(
             repository: MovieSearchRepository()
         )
