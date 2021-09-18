@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "626E7905-9927-4910-A6B4-4CB40EA36342"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TMDb/MovieSearch/MovieSearchRepository.swift"
@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D855640D-3489-43BD-8196-7CE0B9A61046"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TMDb/MovieSearch/MovieSearchRepository.swift"
@@ -62,9 +62,488 @@
             filePath = "TMDb/MovieSearch/MovieSearchViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "render(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3364525-0539-4B99-BF5B-5C4F86C2413D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/AppRoot/AppCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewController()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "869D5085-9113-4798-BF34-7782889BC303"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/AppRoot/AppCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "start(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59BE3F78-414E-49E9-91F0-E03BF200C0C2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/MovieSearch/MovieViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
             endingLineNumber = "91"
-            landmarkName = "render(_:)"
+            landmarkName = "bind(movie:usingImageResolver:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27BAD92F-B4C1-4814-8C1A-5A408D0986C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/MovieSearch/MovieViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "bind(movie:usingImageResolver:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "27BAD92F-B4C1-4814-8C1A-5A408D0986C9 - bd2edb59951d0a8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TMDb.MovieViewCell.bind(movie: TMDb.Movie, usingImageResolver: TMDb.RemoteImageResolver) -&gt; ()"
+                  moduleName = "TMDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshua.lamson/iOS/TMDb/TMDb/MovieSearch/MovieViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "1890">
+               </Location>
+               <Location
+                  uuid = "27BAD92F-B4C1-4814-8C1A-5A408D0986C9 - bd2edb59951d0a8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TMDb.MovieViewCell.bind(movie: TMDb.Movie, usingImageResolver: TMDb.RemoteImageResolver) -&gt; ()"
+                  moduleName = "TMDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshua.lamson/iOS/TMDb/TMDb/MovieSearch/MovieViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "1986">
+               </Location>
+               <Location
+                  uuid = "27BAD92F-B4C1-4814-8C1A-5A408D0986C9 - 886dd8ced1ad3746"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TMDb.Result&lt;__C.UIImage&gt;) -&gt; () in TMDb.MovieViewCell.bind(movie: TMDb.Movie, usingImageResolver: TMDb.RemoteImageResolver) -&gt; ()"
+                  moduleName = "TMDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshua.lamson/iOS/TMDb/TMDb/MovieSearch/MovieViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "426">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00F33B47-DC25-4BB5-969F-2B1AD2C46370"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/MovieSearch/MovieViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "bind(movie:usingImageResolver:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D08E5BF-30B8-41F0-B666-3670A2470B1C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/MovieSearch/MovieViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "bind(movie:usingImageResolver:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A0BB859-9BF3-4487-88D0-78E7C5C0E2EA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/ApiModels/Movie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "posterImageUrl"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CE2D94C-2776-4104-ABCC-8BF162BBB3BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/ApiModels/Movie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "posterImageUrl"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19E2C490-C733-4021-9396-20A63388E242"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/MovieSearch/MovieViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "bind(movie:usingImageResolver:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "615F2BED-17DD-4F73-8B50-F9EFFF811B7D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/Arch/Data/RemoteImageResolver.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "load(imageAt:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BBD46FB-83EB-49C5-9436-66349B313D59"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/Arch/Data/RemoteImageResolver.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "load(imageAt:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5BBD46FB-83EB-49C5-9436-66349B313D59 - dab74cb300f3a7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TMDb.CachedRemoteImageResolver.load(imageAt: Foundation.URL, _: (TMDb.Result&lt;__C.UIImage&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TMDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshua.lamson/iOS/TMDb/TMDb/Arch/Data/RemoteImageResolver.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "616">
+               </Location>
+               <Location
+                  uuid = "5BBD46FB-83EB-49C5-9436-66349B313D59 - f48aaef74be05207"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TMDb.CachedRemoteImageResolver.load(imageAt: Foundation.URL, _: (TMDb.Result&lt;__C.UIImage&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TMDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshua.lamson/iOS/TMDb/TMDb/Arch/Data/RemoteImageResolver.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF686DAB-5EB8-4B07-94C7-D1F7FE22F7CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/Arch/Data/RemoteImageResolver.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "load(imageAt:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CF686DAB-5EB8-4B07-94C7-D1F7FE22F7CB - dab74cb300f3ac1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TMDb.CachedRemoteImageResolver.load(imageAt: Foundation.URL, _: (TMDb.Result&lt;__C.UIImage&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TMDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshua.lamson/iOS/TMDb/TMDb/Arch/Data/RemoteImageResolver.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "2462">
+               </Location>
+               <Location
+                  uuid = "CF686DAB-5EB8-4B07-94C7-D1F7FE22F7CB - e07d5984994904ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TMDb.CachedRemoteImageResolver.load(imageAt: Foundation.URL, _: (TMDb.Result&lt;__C.UIImage&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TMDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshua.lamson/iOS/TMDb/TMDb/Arch/Data/RemoteImageResolver.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C244252-0743-482D-B3FF-B690022A7032"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/Arch/Data/RemoteImageResolver.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "load(imageAt:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF4BB166-9063-4C8B-80EC-64EA600FBC6E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/Arch/Data/RemoteImageResolver.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "load(imageAt:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2C713E51-BDE8-4626-8562-5FA5A6DD8F4D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/Arch/Data/RemoteImageResolver.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "load(imageAt:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2C713E51-BDE8-4626-8562-5FA5A6DD8F4D - 9a0eac61da8d6fd0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TMDb.CachedRemoteImageResolver.load(imageAt: Foundation.URL, _: (TMDb.Result&lt;__C.UIImage&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TMDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshua.lamson/iOS/TMDb/TMDb/Arch/Data/RemoteImageResolver.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "745">
+               </Location>
+               <Location
+                  uuid = "2C713E51-BDE8-4626-8562-5FA5A6DD8F4D - dab74cb300f3a87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TMDb.CachedRemoteImageResolver.load(imageAt: Foundation.URL, _: (TMDb.Result&lt;__C.UIImage&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TMDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshua.lamson/iOS/TMDb/TMDb/Arch/Data/RemoteImageResolver.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "409">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FEDBF6E2-F790-4344-8615-0DF9C7182483"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/Arch/Data/RemoteImageResolver.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "load(imageAt:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47394C50-C159-4E1C-9F14-4CFB62BE8B42"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/Arch/Data/RemoteImageResolver.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "load(imageAt:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FCC66E7E-3824-4BC8-837A-F439EE9195A4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/Arch/Data/RemoteImageResolver.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "load(imageAt:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FCC66E7E-3824-4BC8-837A-F439EE9195A4 - dab74cb300f3b1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TMDb.CachedRemoteImageResolver.load(imageAt: Foundation.URL, _: (TMDb.Result&lt;__C.UIImage&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TMDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshua.lamson/iOS/TMDb/TMDb/Arch/Data/RemoteImageResolver.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "1996">
+               </Location>
+               <Location
+                  uuid = "FCC66E7E-3824-4BC8-837A-F439EE9195A4 - f8d3bfe2759ff963"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TMDb.CachedRemoteImageResolver.load(imageAt: Foundation.URL, _: (TMDb.Result&lt;__C.UIImage&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TMDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshua.lamson/iOS/TMDb/TMDb/Arch/Data/RemoteImageResolver.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24A1B097-7BF9-4B94-A41E-8EA11C6EFFB1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDb/MovieSearch/MovieSearchRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "search(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
